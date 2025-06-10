@@ -59,4 +59,5 @@ c++ -std=c++17 -O3 -shared -fPIC \
 ```bash
 python gui.py
 ```
+![Image](https://github.com/user-attachments/assets/bdb0cc5d-bebb-4a59-bc14-41416dfa04ab)
 
