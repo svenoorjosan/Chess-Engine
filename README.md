@@ -43,7 +43,7 @@ A simple, high-performance chess engine written in C++ with a Python/Pygame fron
 ## Installation
 
 1. **Clone the repo**
-2. **Locate the repo**
+2. **Locate the repo on your pc**
 
 ## Compile
 ```bash
