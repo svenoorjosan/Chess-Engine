@@ -30,5 +30,33 @@ A simple, high-performance chess engine written in C++ with a Python/Pygame fron
 ├── gui.py                 # Pygame front-end
 ├── images/                # Piece sprites (PNG)
 │   ├── wP.png wR.png …     # White pieces
-│   └── bP.png bR.png …     # Black pieces
-└── requirements.txt       # Python dependencies
+└── └── bP.png bR.png …     # Black pieces
+```
+## Prerequisites
+
+- **C++ compiler** with C++11 support (e.g. g++, clang++)  
+- **CMake** ≥ 3.10  
+- **Python** ≥ 3.7  
+- **PyBind11**  
+- **Pygame**  
+
+## Installation
+
+1. **Clone the repo**
+2. **Locate the repo**
+
+## Compile
+```bash
+c++ -std=c++17 -O3 -shared -fPIC \
+  -I/mingw64/include \
+  -I/mingw64/include/python3.12 \
+  -I/mingw64/include/pybind11 \
+  engine.cpp \
+  -L/mingw64/lib -lpython3.12 \
+  -o chess_engine.pyd
+```
+## Run 
+```bash
+python gui.py
+```
+
